@@ -20,7 +20,7 @@
 ## 快速开始
 ### 1. 环境准备
 - JDK 17+
-- PostgreSQL 14+（需提前创建默认主库 `postgres`）
+- PostgreSQL 14+（需提前创建默认主库 `saas_master_db`）
 - Maven 3.6+
 
 ### 2. 配置主数据源
@@ -32,7 +32,7 @@ spring:
       primary: master
       datasource:
         master:
-          url: jdbc:postgresql://localhost:5432/postgres
+          url: jdbc:postgresql://localhost:5432/saas_master_db
           username: postgres
           password: 123456
           driver-class-name: org.postgresql.Driver
