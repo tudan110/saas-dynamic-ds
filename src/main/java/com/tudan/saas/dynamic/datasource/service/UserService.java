@@ -16,9 +16,8 @@ public interface UserService {
     /**
      * 获取用户列表
      *
-     * @param tenantId 租户ID
      * @return 用户列表
      */
-    List<SysUser> getuserList(String tenantId);
+    List<SysUser> getuserList();
 
 }

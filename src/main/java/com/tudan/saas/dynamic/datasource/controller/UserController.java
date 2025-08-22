@@ -24,13 +24,12 @@ public class UserController {
 
     /**
      * 获取用户列表
-     * 模拟TenantContext上下文设值
      *
      * @return String
      */
     @GetMapping("/list")
-    public List<SysUser> list(String tenantId) {
-        return userService.getuserList(tenantId);
+    public List<SysUser> list() {
+        return userService.getuserList();
     }
 
 }
