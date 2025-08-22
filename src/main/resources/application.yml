@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+saas:
+  datasource:
+    db-prefix: tenant_db_
+    url-prefix: jdbc:postgresql://localhost:5432
+    url-suffix: ?useUnicode=true&characterEncoding=utf8&ssl=false
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+spring:
+  application:
+    name: tudan-saas-dynamic-ds
+  datasource:
+    dynamic:
+      datasource:
+        master:
+          url: jdbc:postgresql://localhost:5432/saas_master_db?useUnicode=true&characterEncoding=utf8&ssl=false
+          username: postgres
+          password: 123456
+          driver-class-name: org.postgresql.Driver
+          hikari:
+            maximum-pool-size: 5
