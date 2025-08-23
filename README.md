@@ -102,6 +102,8 @@ saas-dynamic-datasource/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/tudan/saas/dynamic/datasource/
+│   │   │   ├── annotation/    # 自定义注解（@TenantDS）
+│   │   │   ├── aspect/        # 切面（处理 @TenantDS 注解）
 │   │   │   ├── config/        # 动态数据源配置
 │   │   │   ├── controller/    # 租户注册接口
 │   │   │   ├── domain/        # 实体类（租户数据源、用户等）
