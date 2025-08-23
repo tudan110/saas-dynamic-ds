@@ -12,7 +12,7 @@ saas:
 
 spring:
   application:
-    name: sass-dynamic-datasource
+    name: saas-dynamic-datasource
   datasource:
     dynamic:
       datasource:

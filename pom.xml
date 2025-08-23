@@ -11,7 +11,7 @@
 	<groupId>com.tudan</groupId>
 	<artifactId>saas-dynamic-datasource</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sass-dynamic-datasource</name>
+	<name>saas-dynamic-datasource</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

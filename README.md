@@ -1,4 +1,4 @@
-# sass-dynamic-ds
+# saas-dynamic-ds
 
 基于 MyBatis-Plus Dynamic Datasource 的多租户动态数据源解决方案，适配 PostgreSQL
 数据库，支持租户注册时自动创建独立数据库及表结构，实现租户数据隔离与灵活的数据源路由。
@@ -87,10 +87,10 @@ public class UserServiceImpl {
 ## 目录结构
 
 ```
-sass-dynamic-ds/
+saas-dynamic-ds/
 ├── src/
 │   ├── main/
-│   │   ├── java/com/tudan/sass/dynamic/datasource/
+│   │   ├── java/com/tudan/saas/dynamic/datasource/
 │   │   │   ├── config/        # 动态数据源配置
 │   │   │   ├── controller/    # 租户注册接口
 │   │   │   ├── domain/        # 实体类（租户数据源、用户等）
