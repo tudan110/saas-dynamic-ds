@@ -53,10 +53,22 @@ spring:
 
 ### 4. 切换租户数据源
 
+通过 `@TenantDS` 注解指定租户数据源：
+
+- 默认表达式：#{T(com.tudan.saas.dynamic.datasource.holder.TenantContext).getTenantId()}
+- 类注解和方法注解都能识别
+- SpEL 表达式兼容 #{} 和无 #{} 写法
+
+```java
+@Service
+@TenantDS
+public class UserServiceImpl implements UserService {
+}
+```
+
 通过 `@DS` 注解指定租户数据源：
 
 ```java
-
 @Service
 // 类级别注解：通过 SpEL 调用 TenantContext 的静态方法获取 tenantId
 @DS("#{T(com.tudan.saas.dynamic.datasource.holder.TenantContext).getTenantId()}")
@@ -67,7 +79,6 @@ public class UserServiceImpl implements UserService {
 或者
 
 ```java
-
 @Service
 public class UserServiceImpl {
     // 操作租户数据库（数据源标识为租户ID）
