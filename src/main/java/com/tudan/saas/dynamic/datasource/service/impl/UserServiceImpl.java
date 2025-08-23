@@ -1,7 +1,7 @@
 package com.tudan.saas.dynamic.datasource.service.impl;
 
-import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.dynamic.datasource.toolkit.DynamicDataSourceContextHolder;
+import com.tudan.saas.dynamic.datasource.annotation.TenantDS;
 import com.tudan.saas.dynamic.datasource.domain.SysUser;
 import com.tudan.saas.dynamic.datasource.mapper.UserMapper;
 import com.tudan.saas.dynamic.datasource.service.UserService;
@@ -19,7 +19,8 @@ import java.util.List;
  * @since 2025-08-22 11:18:28
  */
 @Service
-@DS("#{T(com.tudan.saas.dynamic.datasource.holder.TenantContext).getTenantId()}")
+// @DS("#{T(com.tudan.saas.dynamic.datasource.holder.TenantContext).getTenantId()}")
+@TenantDS
 public class UserServiceImpl implements UserService {
 
     @Autowired
