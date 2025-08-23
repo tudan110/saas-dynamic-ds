@@ -12,10 +12,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.tudan.saas.dynamic.datasource.mapper")
-public class TudanSaasDynamicDsApplication {
+public class SaasDynamicDatasourceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TudanSaasDynamicDsApplication.class, args);
+        SpringApplication.run(SaasDynamicDatasourceApplication.class, args);
     }
 
 }

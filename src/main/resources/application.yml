@@ -12,7 +12,7 @@ saas:
 
 spring:
   application:
-    name: tudan-saas-dynamic-ds
+    name: sass-dynamic-datasource
   datasource:
     dynamic:
       datasource:

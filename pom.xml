@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tudan</groupId>
-	<artifactId>tudan-saas-dynamic-ds</artifactId>
+	<artifactId>saas-dynamic-datasource</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>tudan-saas-dynamic-ds</name>
+	<name>sass-dynamic-datasource</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
