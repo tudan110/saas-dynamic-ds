@@ -1,7 +1,7 @@
 package com.tudan.saas.dynamic.datasource.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tudan.saas.dynamic.datasource.domain.TenantDatasource;
+import com.tudan.saas.dynamic.datasource.domain.po.TenantDatasource;
 
 /**
  * 租户数据源映射器接口

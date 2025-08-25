@@ -1,6 +1,6 @@
 package com.tudan.saas.dynamic.datasource.controller;
 
-import com.tudan.saas.dynamic.datasource.domain.SysUser;
+import com.tudan.saas.dynamic.datasource.domain.po.SysUser;
 import com.tudan.saas.dynamic.datasource.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

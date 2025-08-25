@@ -1,6 +1,6 @@
 package com.tudan.saas.dynamic.datasource.service;
 
-import com.tudan.saas.dynamic.datasource.domain.SysUser;
+import com.tudan.saas.dynamic.datasource.domain.po.SysUser;
 
 import java.util.List;
 

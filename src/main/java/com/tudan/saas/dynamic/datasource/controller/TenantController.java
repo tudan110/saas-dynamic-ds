@@ -6,7 +6,7 @@ import com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator;
 import com.baomidou.dynamic.datasource.creator.hikaricp.HikariCpConfig;
 import com.tudan.saas.dynamic.datasource.config.MasterDataSourceProperties;
 import com.tudan.saas.dynamic.datasource.config.SaasDataSourceProperties;
-import com.tudan.saas.dynamic.datasource.domain.TenantDatasource;
+import com.tudan.saas.dynamic.datasource.domain.po.TenantDatasource;
 import com.tudan.saas.dynamic.datasource.mapper.TenantDatasourceMapper;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

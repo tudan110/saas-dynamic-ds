@@ -1,4 +1,4 @@
-package com.tudan.saas.dynamic.datasource.domain;
+package com.tudan.saas.dynamic.datasource.domain.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
