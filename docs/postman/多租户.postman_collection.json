@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "2b48c616-8606-48e1-b5bc-472fbe639e05",
+		"name": "多租户",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8244655"
+	},
+	"item": [
+		{
+			"name": "获取所有数据源",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tenant/listAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tenant",
+						"listAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "注册租户",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tenant/register?tenantId=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tenant",
+						"register"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取租户 X 的用户",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Tenant-Id",
+						"value": "3",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "移除租户数据源",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tenant/remove?tenantId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tenant",
+						"remove"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
